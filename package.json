@@ -1,0 +1,26 @@
+{
+  "name": "week-12",
+  "version": "0.0.1",
+  "description": "Become-a-QA-Automation-Week12",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --color",
+    "test-coverage": "jest --coverage --color"
+  },
+  "jest":{
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbellico/week-12.git"
+  },
+  "author": "Melisa D. Bellico",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "jest": "^26.6.3"
+  }
+}
