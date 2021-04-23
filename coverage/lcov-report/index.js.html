@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">51.52% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>17/33</span>
+                <span class='fraction'>33/33</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>5/10</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">56.67% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>17/30</span>
+                <span class='fraction'>30/30</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -148,32 +148,32 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">17x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -211,33 +211,33 @@ const division = (dividendo, divisor) =&gt; {
   }
 }
 //6
-const tablaMultiplicar = <span class="fstat-no" title="function not covered" >(m</span>ultiplicando, multiplicador) =&gt; {
-<span class="cstat-no" title="statement not covered" >  if (multiplicador === undefined) <span class="cstat-no" title="statement not covered" >multiplicador = 10;</span></span>
-  let table = <span class="cstat-no" title="statement not covered" >[]</span>
-<span class="cstat-no" title="statement not covered" >    for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt;= multiplicador; i++){</span>
-<span class="cstat-no" title="statement not covered" >      table.push(multiplicando * i)</span>
+const tablaMultiplicar = (multiplicando, multiplicador) =&gt; {
+  if (multiplicador === undefined) multiplicador = 10;
+  let table = []
+    for (let i = 0; i &lt;= multiplicador; i++){
+      table.push(multiplicando * i)
   }
-<span class="cstat-no" title="statement not covered" >return table</span>
+return table
 }
 //7
-const potencia = <span class="fstat-no" title="function not covered" >(b</span>ase, exponente) =&gt; {
-<span class="cstat-no" title="statement not covered" >  return Math.pow(base, exponente)</span>
+const potencia = (base, exponente) =&gt; {
+  return Math.pow(base, exponente)
 }
 //8  
-const anidada = <span class="fstat-no" title="function not covered" >(a</span>,b) =&gt; {
-  function <span class="fstat-no" title="function not covered" >cuadrado(</span>x) {
-<span class="cstat-no" title="statement not covered" >    return x * x;</span>
+const anidada = (a,b) =&gt; {
+  function cuadrado(x) {
+    return x * x;
   }
-<span class="cstat-no" title="statement not covered" >    return cuadrado(a) + cuadrado(b);</span>
+    return cuadrado(a) + cuadrado(b);
   }
 //9
-const cerosIzq = <span class="fstat-no" title="function not covered" >(n</span>um, totalLength) =&gt; {
-  var numStr = <span class="cstat-no" title="statement not covered" >num.toString();</span>
-  var numCeros = <span class="cstat-no" title="statement not covered" >totalLength - numStr.length;</span>
-<span class="cstat-no" title="statement not covered" >  for (var i = <span class="cstat-no" title="statement not covered" >1;</span> i &lt;= numCeros; i++) {</span>
-<span class="cstat-no" title="statement not covered" >      numStr = "0" + numStr;</span>
+const cerosIzq = (num, totalLength) =&gt; {
+  var numStr = num.toString();
+  var numCeros = totalLength - numStr.length;
+  for (var i = 1; i &lt;= numCeros; i++) {
+      numStr = "0" + numStr;
     }
-<span class="cstat-no" title="statement not covered" >  return numStr;</span>
+  return numStr;
 }
 export {
   texto,
@@ -256,7 +256,7 @@ export {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Apr 23 2021 16:36:21 GMT-0300 (hora estándar de Argentina)
+                at Fri Apr 23 2021 20:24:33 GMT-0300 (hora estándar de Argentina)
             </div>
         </div>
         <script src="prettify.js"></script>
