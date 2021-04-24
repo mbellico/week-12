@@ -31,10 +31,10 @@ test('but 100/50 is equal to 2', () => {
 });
 //6
 test('Multiplying 5 for undefined', () => {
-    expect(index.tablaMultiplicar(5,undefined)).toEqual(0,5,10,15,20,25,30,35,40,45,50);
+    expect(index.tablaMultiplicar(5,undefined)).toEqual([0,5,10,15,20,25,30,35,40,45,50]);
 })
 test('Multiplying 2 for 5', () => {
-    expect(index.tablaMultiplicar(2,5)).toStrictEqual(0,2,4,6,8,10);
+    expect(index.tablaMultiplicar(2,5)).toStrictEqual([0,2,4,6,8,10]);
 });
 //7
 test('the square of 11 should be equal to 121', () => {
