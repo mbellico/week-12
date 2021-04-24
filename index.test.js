@@ -1,6 +1,4 @@
 const { test, expect } = require('@jest/globals');
-import { TYPE_MISMATCH_ERR } from "domexception";
-import { isUndefined, toLower } from "lodash";
 import * as index from "./index";
 //1
 test('there is no M in Rosario', () =>{
