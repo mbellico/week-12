@@ -2,7 +2,7 @@ const { test } = require("@jest/globals");
 //1
 const texto = (texto) => {
   return texto
-}  
+}
 //2
 const suma = (sumandoA, sumandoB) => {
   return sumandoA + sumandoB;
@@ -10,7 +10,7 @@ const suma = (sumandoA, sumandoB) => {
 //3
 const resta = (minuendo, sustraendo) => {
   return minuendo - sustraendo;
-} 
+}
 //4
 const multiplicacion = (factorA, factorB) => {
   return factorA * factorB;
@@ -36,7 +36,7 @@ return table
 const potencia = (base, exponente) => {
   return Math.pow(base, exponente)
 }
-//8  
+//8
 const anidada = (a,b) => {
   function cuadrado(x) {
     return x * x;
@@ -62,4 +62,4 @@ export {
   potencia,
   anidada,
   cerosIzq,
-} 
+}
