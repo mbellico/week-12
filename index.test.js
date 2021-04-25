@@ -16,13 +16,14 @@ describe('text function', () => {
     });
 });
 //2
-describe('Addition Funtions')
+describe('Addition Funtions', () => {
     test('1550 plus 3000 should be under or equal to 5000', () => {
         expect(index.suma(1550,3000)).toBeLessThanOrEqual(4550);
     });
     test('3000 plus 150.65 should be close to 3151', () => {
         expect(index.suma(3000,150.65)).toBeCloseTo(3150.65);
     });
+});
 //3
 describe('Substracting functions', () => {
     test('15000 minus 3000 should be equal to 12000', () => {
@@ -64,5 +65,5 @@ describe('Multiplication table', () => {
     });
 //9
     test('adding three left zeroes to the number ninety four', () => {
-        expect(index.cerosIzq(94,3)).toBe('094');
+        expect(index.cerosIzq(94,5)).toBe('00094');
     });
