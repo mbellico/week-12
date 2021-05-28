@@ -4,7 +4,7 @@
 Creating unit tests with Jest framework.
 
 ## Author: 
-Melisa D. Bellico 
+[Melisa D. Bellico](https://www.linkedin.com/in/melisabellico/)
 
 ## Technology stack 
 * [Node.js](https://nodejs.org/es/docs/) 
